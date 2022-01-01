@@ -18,7 +18,7 @@ class Utils {
       const DEFAULT = 'http://172.17.0.1:5001'
 
       let result = this.conf.get('ipfsUrl')
-      console.log('result: ', result)
+      // console.log('result: ', result)
 
       if (!result) {
         this.conf.set('ipfsUrl', DEFAULT)
