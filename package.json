@@ -1,12 +1,12 @@
 {
-  "name": "psf-bch-wallet",
-  "description": "A command line (CLI) wallet app for working with Bitcoin Cash and SLP tokens. Uses services over IPFS.",
-  "version": "v2.14.2",
+  "name": "ipfs-coord-debug",
+  "description": "A CLI app for interrogating an IPFS node running ipfs-coord",
+  "version": "1.0.0",
   "author": "Chris Troutner <chris.troutner@gmail.com>",
   "bin": {
-    "bin-cli-boilerplate": "./bin/run"
+    "ipfs-coord-debug": "./bin/run"
   },
-  "bugs": "https://github.com/Permissionless-Software-Foundation/psf-bch-wallet/issues",
+  "bugs": "https://github.com/Permissionless-Software-Foundation/ipfs-coord-debug/issues",
   "dependencies": {
     "@oclif/command": "1.8.0",
     "@oclif/config": "1.17.0",
@@ -58,7 +58,7 @@
     "/oclif.manifest.json",
     "/src"
   ],
-  "homepage": "https://github.com/Permissionless-Software-Foundation/psf-bch-wallet",
+  "homepage": "https://github.com/Permissionless-Software-Foundation/ipfs-coord-debug",
   "keywords": [
     "oclif"
   ],
@@ -66,13 +66,13 @@
   "main": "src/index.js",
   "oclif": {
     "commands": "./src/commands",
-    "bin": "psf-bch-wallet",
+    "bin": "ipfs-coord-debug",
     "plugins": [
       "@oclif/plugin-help",
       "conf-cli"
     ]
   },
-  "repository": "Permissionless-Software-Foundation/psf-bch-wallet",
+  "repository": "Permissionless-Software-Foundation/ipfs-coord-debug",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "npm run lint",

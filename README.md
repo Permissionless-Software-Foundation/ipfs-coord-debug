@@ -1,12 +1,6 @@
-# psf-bch-wallet
+# ipfs-coord-debug
 
-This is a command-line (CLI) app for working with the Bitcoin Cash (BCH) blockchain, and SLP tokens.
-
-This app connects to a [ipfs-bch-wallet-service](https://github.com/Permissionless-Software-Foundation/ipfs-bch-wallet-service) over [IPFS](https://ipfs.io), using the [ipfs-coord](https://github.com/Permissionless-Software-Foundation/ipfs-coord) library. This app uses the [oclif CLI framework](https://oclif.io/).
-
-This app is intended for developers who want to work with the BCH blockchain. To see how this software fits in with the Cash Stack architecture, devs should read this blog post on [Realizing the Web 3 Cash Stack](https://bafybeie3w6ykd3ur6b6ytxoopi6p7vipmyvdyq7s2aw5ngsenhtjvyp4d4.ipfs.dweb.link/blog/realizing-the-web-3-cash-stack).
-
-- [(Video) How to Install and Use](https://youtu.be/45YEeZi_8Kc)
+This is a command-line (CLI) app for interrogating and debugging IPFS nodes that are running [ipfs-coord](https://www.npmjs.com/package/ipfs-coord).
 
 ## Install
 
@@ -46,10 +40,11 @@ Explore the other configuration settings:
 ## Table of Contents
 
 <!-- toc -->
-* [psf-bch-wallet](#psf-bch-wallet)
-* [Usage](#usage)
-* [Commands](#commands)
-<!-- tocstop -->
+
+- [psf-bch-wallet](#psf-bch-wallet)
+- [Usage](#usage)
+- [Commands](#commands)
+  <!-- tocstop -->
 
 # Usage
 
@@ -64,25 +59,26 @@ $ ./bin/run COMMAND
 In the commands below, replace `psf-bch-wallet` with `./bin/run`.
 
 <!-- commands -->
-* [`psf-bch-wallet conf [KEY] [VALUE]`](#psf-bch-wallet-conf-key-value)
-* [`psf-bch-wallet help [COMMAND]`](#psf-bch-wallet-help-command)
-* [`psf-bch-wallet ipfs-peers`](#psf-bch-wallet-ipfs-peers)
-* [`psf-bch-wallet ipfs-relays`](#psf-bch-wallet-ipfs-relays)
-* [`psf-bch-wallet ipfs-status`](#psf-bch-wallet-ipfs-status)
-* [`psf-bch-wallet msg-send`](#psf-bch-wallet-msg-send)
-* [`psf-bch-wallet p2wdb-read`](#psf-bch-wallet-p2wdb-read)
-* [`psf-bch-wallet p2wdb-service`](#psf-bch-wallet-p2wdb-service)
-* [`psf-bch-wallet p2wdb-write`](#psf-bch-wallet-p2wdb-write)
-* [`psf-bch-wallet send-bch`](#psf-bch-wallet-send-bch)
-* [`psf-bch-wallet send-tokens`](#psf-bch-wallet-send-tokens)
-* [`psf-bch-wallet token-burn`](#psf-bch-wallet-token-burn)
-* [`psf-bch-wallet wallet-addrs`](#psf-bch-wallet-wallet-addrs)
-* [`psf-bch-wallet wallet-balances`](#psf-bch-wallet-wallet-balances)
-* [`psf-bch-wallet wallet-create`](#psf-bch-wallet-wallet-create)
-* [`psf-bch-wallet wallet-list`](#psf-bch-wallet-wallet-list)
-* [`psf-bch-wallet wallet-remove`](#psf-bch-wallet-wallet-remove)
-* [`psf-bch-wallet wallet-service`](#psf-bch-wallet-wallet-service)
-* [`psf-bch-wallet wallet-service-test`](#psf-bch-wallet-wallet-service-test)
+
+- [`psf-bch-wallet conf [KEY] [VALUE]`](#psf-bch-wallet-conf-key-value)
+- [`psf-bch-wallet help [COMMAND]`](#psf-bch-wallet-help-command)
+- [`psf-bch-wallet ipfs-peers`](#psf-bch-wallet-ipfs-peers)
+- [`psf-bch-wallet ipfs-relays`](#psf-bch-wallet-ipfs-relays)
+- [`psf-bch-wallet ipfs-status`](#psf-bch-wallet-ipfs-status)
+- [`psf-bch-wallet msg-send`](#psf-bch-wallet-msg-send)
+- [`psf-bch-wallet p2wdb-read`](#psf-bch-wallet-p2wdb-read)
+- [`psf-bch-wallet p2wdb-service`](#psf-bch-wallet-p2wdb-service)
+- [`psf-bch-wallet p2wdb-write`](#psf-bch-wallet-p2wdb-write)
+- [`psf-bch-wallet send-bch`](#psf-bch-wallet-send-bch)
+- [`psf-bch-wallet send-tokens`](#psf-bch-wallet-send-tokens)
+- [`psf-bch-wallet token-burn`](#psf-bch-wallet-token-burn)
+- [`psf-bch-wallet wallet-addrs`](#psf-bch-wallet-wallet-addrs)
+- [`psf-bch-wallet wallet-balances`](#psf-bch-wallet-wallet-balances)
+- [`psf-bch-wallet wallet-create`](#psf-bch-wallet-wallet-create)
+- [`psf-bch-wallet wallet-list`](#psf-bch-wallet-wallet-list)
+- [`psf-bch-wallet wallet-remove`](#psf-bch-wallet-wallet-remove)
+- [`psf-bch-wallet wallet-service`](#psf-bch-wallet-wallet-service)
+- [`psf-bch-wallet wallet-service-test`](#psf-bch-wallet-wallet-service-test)
 
 ## `psf-bch-wallet conf [KEY] [VALUE]`
 
@@ -369,4 +365,5 @@ DESCRIPTION
 ```
 
 _See code: [src/commands/wallet-service-test.js](https://github.com/Permissionless-Software-Foundation/psf-bch-wallet/blob/vv2.14.2/src/commands/wallet-service-test.js)_
+
 <!-- commandsstop -->
