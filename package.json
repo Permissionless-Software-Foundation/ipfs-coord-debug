@@ -20,6 +20,7 @@
     "conf-cli": "0.1.9",
     "eccrypto-js": "^5.4.0",
     "ipfs-coord": "6.7.4",
+    "ipfs-http-client": "^55.0.0",
     "jsonrpc-lite": "2.2.0",
     "koa": "2.13.4",
     "koa-bodyparser": "4.3.0",
